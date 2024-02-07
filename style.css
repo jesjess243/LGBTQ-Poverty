@@ -1,0 +1,258 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  width:auto;
+}
+
+button {
+  display: block;
+  color: white;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar {
+  position: relative;
+  z-index: 5;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.navbar ul li {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size:smaller;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li button {
+  padding: 14px 16px;
+}
+
+.navbar ul li a:hover {
+  font-weight: bolder;
+}
+
+.navbar ul li button:hover {
+  font-weight: bolder;
+}
+
+.header-container {
+  display: flex;
+  height: max-content;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  color: white;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.header-item:nth-of-type(1) {
+  display: flex;
+}
+
+.header-item:nth-of-type(2) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#header-img {
+  width: 500px;
+  height: 500px;
+}
+
+.header-button {
+  margin: 12px;
+  padding: 16px 24px;
+  background-color: hotpink;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+}
+
+.header-button:hover {
+  background-color: deeppink;
+}
+
+.header-button:active {
+  background-color: palevioletred;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: mediumvioletred;
+  overflow-x: hidden;
+  color: white;
+}
+
+h2 {
+  display: flex;
+  background-color: hotpink;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+  color: white;
+  text-align: justify;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column nowrap;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: palevioletred;
+}
+
+.section-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  justify-content: center;
+}
+
+.section-container .content-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: safe;
+  column-gap: 20px;
+}
+
+.section-img {
+  border: 2mm solid black;
+  width: 500px;
+  height: 500px;
+}
+
+/* Add style to button */
+#theme-button {
+  display: inline-block;
+  align-self: center;
+  background-color: lightskyblue;
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-body {
+  background-color: #151716;
+  color: ivory;
+}
+
+.dark-button {
+  background-color: lightskyblue;
+  color; ivory;
+}
+
+.petition-container {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  text-justify: auto;
+  font-size: 2rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-image {
+  width: 20rem; /* sets a default width for the image */
+  height: 20rem;
+}
